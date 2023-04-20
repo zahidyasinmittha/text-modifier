@@ -1,20 +1,23 @@
 {
-  "homepage": "https://zahidyasinmittha.github.io/codebyzahid",
+  "homepage": "https://github.com/zahidyasinmittha/text-modifier",
   "name": "text-extractor-like-lower-to-uppercase",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "build": "vite build",
-    "preview": "vite preview",
-    "predeploy":"npx vite build",
-    "deploy" : "gh-pages -d build"
+    "preview": "vite preview"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.14",
     "postcss": "^8.4.23",
     "tailwindcss": "^3.3.1",
     "vite": "^4.2.0"
+  },
+  "dependencies": {
+    "gh-pages": "^5.0.0"
   }
 }
