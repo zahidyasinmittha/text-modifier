@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>Vite App</title>
+    <script type="module" crossorigin src="/assets/index-5f87c302.js"></script>
+    <link rel="stylesheet" href="/assets/index-c59a6e28.css">
+  </head>
+  <body>
+    <nav class="h-10  bg-black flex justify-center items-center">
+      <ul class="flex justify-between items-center text-white w-[95%] text-2xl font-extrabold font-mono m-2">
+        <li>Text modifier</li>
+        <a href="http://www.codebyzahid.com" target="_blank" rel="noopener noreferrer">Contact</a>
+      </ul>
+    </nav>
+    <div class="container flex justify-center items-center flex-col h-[80vh]">
+      <div id="output_text" class="text-center text-2xl font-mono font-bold hidden">Your output:</div>
+      <textarea id="text" name="teaxt" id="text" class="w-[70%] h-[30vh] border-[3px] border-black m-3" placeholder="Type Here"></textarea>
+      <div id="counter" class="text-center text-2xl font-mono font-bold"></div>
+      <div class="w-[70%] flex flex-wrap justify-center gap-3 items-center font-mono">
+        <button class="bg-black text-white p-2 hover:bg-red-600" onclick="remove_spacing(true)">remove extra spacing</button>
+        <button class="bg-black text-white p-2 hover:bg-red-600" onclick="first_letter(true)">first letter capital</button>
+        <button class="bg-black text-white p-2 hover:bg-red-600" onclick="all_letter(true)">All letter capital</button>
+        <button class="bg-black text-white p-2 hover:bg-red-600" onclick="first_letter(false)">first letter small</button>
+        <button class="bg-black text-white p-2 hover:bg-red-600" onclick="all_letter(false)">All letter small</button>
+      </div>
+    </div>
+    <footer class="absolute w-full bottom-0 bg-black text-center text-white text-2xl font-mono font-bold">
+      &#169; 2023 Copyright: ZAHIDYASINMITTHA
+    </footer>
+    
+  </body>
+</html>
